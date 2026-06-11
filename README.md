@@ -237,7 +237,7 @@ RoadmapView (with citations)
 
 ## 📸 Demo
 
-> *[Link to demo video — to be added before submission]*
+> *<video controls src="Screen Recording 2026-06-11 161110.mp4" title="Title"></video>*
 
 ---
 
