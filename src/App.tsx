@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import "./App.css";
 import Hero from "./components/Hero";
 import CareerForm from "./components/CareerForm";
+import LoadingAnimation from "./components/LoadingAnimation";
 import RoadmapView from "./components/RoadmapView";
 import { queryFoundryIQ, AIResponse } from "./services/aiService";
 import { UserContext } from "./data/knowledgeBase";
 
-type AppState = "hero" | "form" | "results" | "error";
+type AppState = "hero" | "form" | "loading" | "results" | "error";
 
 function App() {
   const [state, setState] = useState<AppState>("hero");
@@ -16,6 +17,7 @@ function App() {
 
   const handleFormSubmit = async (context: UserContext) => {
     setIsLoading(true);
+    setState("loading");
     setErrorMsg("");
     try {
       const result = await queryFoundryIQ(context);
@@ -69,10 +71,14 @@ function App() {
           <Hero onGetStarted={() => setState("form")} />
         )}
 
-        {(state === "form" || isLoading) && (
+        {state === "form" && (
           <div className="form-page">
             <CareerForm onSubmit={handleFormSubmit} isLoading={isLoading} />
           </div>
+        )}
+
+        {state === "loading" && (
+          <LoadingAnimation />
         )}
 
         {state === "results" && response && (
