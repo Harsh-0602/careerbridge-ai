@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/careerbridge-ai/static/css/main.daa23100.css",
+    "main.js": "/careerbridge-ai/static/js/main.2b40eee2.js",
+    "static/js/453.5f1b024a.chunk.js": "/careerbridge-ai/static/js/453.5f1b024a.chunk.js",
+    "index.html": "/careerbridge-ai/index.html",
+    "main.daa23100.css.map": "/careerbridge-ai/static/css/main.daa23100.css.map",
+    "main.2b40eee2.js.map": "/careerbridge-ai/static/js/main.2b40eee2.js.map",
+    "453.5f1b024a.chunk.js.map": "/careerbridge-ai/static/js/453.5f1b024a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.daa23100.css",
+    "static/js/main.2b40eee2.js"
+  ]
+}
