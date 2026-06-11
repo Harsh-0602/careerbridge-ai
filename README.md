@@ -237,7 +237,7 @@ RoadmapView (with citations)
 
 ## 📸 Demo
 
-> <video controls src="Screen Recording 2026-06-11 161110.mp4" title="Title"></video>
+[> <video controls src="Screen Recording 2026-06-11 161110.mp4" title="Title"></video>](https://github.com/user-attachments/assets/345d3206-b40f-4bc9-b926-d7cc4a80963a)
 
 ---
 
